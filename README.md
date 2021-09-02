@@ -18,9 +18,11 @@ yarn add minify-css-modules-classname
 
 ```js
 const { minify } = require( 'minify-css-modules-classname' )
+
 const filepath = 'relative/file/path/to/index.module.css'
 const localName = 'button'
 
+// options: { alphabet: string, useHash: boolean, prefix: string, suffix: string }
 const minified = minify( filepath, localName, options )
 
 // `minified` will be `a-a` with default options for first-time run
