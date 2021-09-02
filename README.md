@@ -1,5 +1,7 @@
 # minify-css-modules-classname
 
+[![Node.js CI status](https://github.com/fengzilong/minify-css-modules-classname/workflows/Node.js%20CI/badge.svg)](https://github.com/fengzilong/minify-css-modules-classname/actions) [![npm](https://img.shields.io/npm/v/minify-css-modules-classname.svg)](https://www.npmjs.com/package/minify-css-modules-classname)
+
 Better algorithm for generating classname for css modules
 
 # Installation
