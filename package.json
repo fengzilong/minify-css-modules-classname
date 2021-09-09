@@ -27,7 +27,6 @@
     "lint-staged": "^4.0.2"
   },
   "dependencies": {
-    "hash-sum": "^2.0.0",
     "incstr": "^1.2.3"
   }
 }
