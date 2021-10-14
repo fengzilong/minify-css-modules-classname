@@ -4,7 +4,7 @@
 
 Better algorithm for generating classname for css modules
 
-# Installation
+## Installation
 
 ```bash
 npm i minify-css-modules-classname
@@ -16,7 +16,7 @@ or
 yarn add minify-css-modules-classname
 ```
 
-# Usage
+## Usage
 
 ```js
 const { minify } = require( 'minify-css-modules-classname' )
@@ -31,6 +31,6 @@ const minified = minify( filepath, localName, options )
 // and id will be updated when you invoke `minify` for next time
 ```
 
-# License
+## License
 
 MIT

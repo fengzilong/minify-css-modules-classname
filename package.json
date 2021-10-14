@@ -2,12 +2,15 @@
   "name": "minify-css-modules-classname",
   "version": "0.1.1",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "lint": "eslint lib",
     "test": "jest --no-cache",
     "test:watch": "jest --no-cache --watchAll",
     "coverage": "jest --no-cache --coverage",
-    "prepublish": "echo 😋",
+    "prepublishOnly": "npm run lint && npm run test",
     "precommit": "lint-staged"
   },
   "lint-staged": {

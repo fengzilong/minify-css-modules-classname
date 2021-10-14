@@ -1,7 +1,13 @@
-const { minify, __reset } = require( '../' )
+const { createMinify, minify: defaultMinify } = require( '../' )
+
+test( 'exports', () => {
+  expect( typeof createMinify ).toBe( 'function' )
+  expect( typeof ( createMinify() ) ).toBe( 'function' )
+  expect( typeof defaultMinify ).toBe( 'function' )
+} )
 
 test( `basic`, () => {
-  __reset()
+  const minify = createMinify()
 
   const class0 = minify( 'src/button/index.module.less', 'button' )
   const class1 = minify( 'src/button/index.module.less', 'text' )
@@ -10,7 +16,7 @@ test( `basic`, () => {
 } )
 
 test( `alphabet`, () => {
-  __reset()
+  const minify = createMinify()
 
   const options = {
     useHash: false
@@ -22,7 +28,7 @@ test( `alphabet`, () => {
 } )
 
 test( `custom alphabet`, () => {
-  __reset()
+  const minify = createMinify()
 
   const options = {
     alphabet: 'cde',
@@ -33,7 +39,7 @@ test( `custom alphabet`, () => {
 } )
 
 test( `prefix and suffix`, () => {
-  __reset()
+  const minify = createMinify()
 
   const options = {
     useHash: false,
